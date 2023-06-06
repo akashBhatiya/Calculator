@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    font-family:sans-serif;
+}
+section{
+    width:100vw;
+    height:100vh;
+    background-color:#111;
+    /* padding-top: 100px; */   
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+#display{
+    width:500px;
+    height: 100px;
+    background-color:#222;
+    margin-top: 100px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.inner-display{
+    width: 90%;
+    height: 40%;
+    border-radius: 0.5rem;
+    color:white;
+    text-align:right;
+}
+
+#prev{
+    font-size:1rem;
+    font-weight:500;
+}
+
+#prev p{
+    margin-top:0.5rem;
+}
+
+#curr{
+    font-size:2rem;
+    font-weight:550;
+}
+
+#curr p{
+    margin:0;
+}
+
+#btn-container{
+    width: 500px;
+    height: 400px;
+    margin-top: 10px;
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.btn-hr-line{
+    display: flex;
+    justify-content:space-around;
+}
+
+.btn{
+    width:23%;
+    height:60px;
+    background-color: #333;
+    border-radius:5px;
+    margin: 0.5rem 0;
+    color: #fff;
+    text-align:center;
+    font-weight:550;
+    font-size:1.4rem;
+}
+
+#clear{
+    /* background: linear-gradient(45deg, rgba(233,80,80,1) 0%, rgba(218,94,178,1) 84%); */
+    background-color: #b02c44;
+}
+
+#clear:hover{
+    /* background: linear-gradient(225deg, rgba(2.0,1) 0%, rgba(218,94,178,1) 64%); */
+    opacity:0.85;
+}
+
+
+.grad{
+    /* background-color: #17825d;*/
+    background: linear-gradient(45deg, rgba(103,165,172,1) 19%, rgba(94,161,218,1) 78%);
+}
+
+
+
+.btn:hover{
+    background-color: #2d2d2d;
+}
+
+.grad:hover{
+    background-color: #17825d;
+    opacity:0.85;
+}
+
+.btn p{
+    margin:1rem;
+}
+
+
+@media screen and (max-width: 520px){
+
+
+    #display{
+        width:100vw;
+        height:43vh;
+        margin-top:0;
+        border-radius:0;
+        justify-content: center;
+    }
+
+    #btn-container{
+        width:100vw;
+        height: 67vh;
+    }
+    #prev, #curr{
+        font-size:3rem;
+        height:20%;
+        margin:20px 0;
+    }
+
+    #prev{
+        font-size: 2rem;
+    }
+
+}
